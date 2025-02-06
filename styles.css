@@ -1,0 +1,60 @@
+body {
+    background-image: url('images/1.jpg'); /* Replace with your image file name */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff69b4; /* Hot pink text */
+    font-size: 24px; /* Default font size */
+}
+
+button {
+    background-color: #ff69b4; /* Hot pink button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    width: 100%; /* Make buttons full width on mobile */
+    max-width: 200px; /* Limit max width for larger screens */
+}
+
+button:hover {
+    background-color: #ff1493; /* Deeper pink on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    button {
+        padding: 15px; /* Increase padding for better touch targets */
+        font-size: 16px; /* Adjust font size for buttons */
+    }
+
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
